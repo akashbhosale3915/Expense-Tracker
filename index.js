@@ -33,7 +33,7 @@ function addExpense() {
     div.appendChild(descText);
     div.appendChild(amtText);
     div.appendChild(dateText);
-    div.style.marginTop = "25px";
+    div.className = "expense";
     document.querySelector("body").appendChild(div);
   }
 }

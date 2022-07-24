@@ -13,16 +13,40 @@
       padding: 0;
       box-sizing: border-box;
     }
+    body {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
     form {
       display: flex;
       flex-direction: column;
       width: 300px;
     }
+    form input {
+      margin: 5px 0;
+      height: 35px;
+      text-indent: 5px;
+    }
+    form button {
+      height: 35px;
+      border: none;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .expense {
+      background: gray;
+      margin-top: 25px;
+      padding: 10px;
+      width: 300px;
+    }
   </style>
   <body>
     <form action="" id="form">
-      <input type="text" placeholder="Description" id="des" />
-      <input type="number" placeholder="Amount" id="amt" />
+      <input type="text" placeholder="Description" id="des" required />
+      <input type="number" placeholder="Amount" id="amt" required />
       <input type="date" id="date" />
       <button type="submit">Add</button>
     </form>
